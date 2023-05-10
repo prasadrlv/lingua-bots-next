@@ -9,22 +9,29 @@ import createEmotionCache from '../src/utils/createEmotionCache'
 const clientSideEmotionCache = createEmotionCache()
 
 export default function MyApp(props) {
-	const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
+    const {
+        Component,
+        emotionCache = clientSideEmotionCache,
+        pageProps,
+    } = props
 
-	return (
-		<CacheProvider value={emotionCache}>
-			<Head>
-				<meta name='viewport' content='initial-scale=1, width=device-width' />
-			</Head>
-			{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-			<CssBaseline />
-			<Component {...pageProps} />
-		</CacheProvider>
-	)
+    return (
+        <CacheProvider value={emotionCache}>
+            <Head>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1, width=device-width"
+                />
+            </Head>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <Component {...pageProps} />
+        </CacheProvider>
+    )
 }
 
 MyApp.propTypes = {
-	Component: PropTypes.elementType.isRequired,
-	emotionCache: PropTypes.object,
-	pageProps: PropTypes.object.isRequired,
+    Component: PropTypes.elementType.isRequired,
+    emotionCache: PropTypes.object,
+    pageProps: PropTypes.object.isRequired,
 }

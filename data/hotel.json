@@ -1,107 +1,107 @@
 [
-  {
-    "legalName": "New York Marquis Hotel",
-    "propertyId": "12546",
-    "address1": "2000 Broadway",
-    "state": "NY",
-    "country": "US",
-    "city": "New York",
-    "gmtOffset": "-05:00",
-    "propertyLocationLatitude": 40.758855,
-    "propertyLocationLongitude": -73.985869,
-    "propertyDescList": [
-      {
-        "propertyDescriptionsType": "LONGDESCRIPTION",
-        "propertyDescriptionsText": "The New York Marquis is a stunning and modern hotel situated in the heart of Times Square in New York City. This luxurious hotel features a contemporary design, upscale amenities, and breathtaking views of the city skyline. With its prime location and top-notch accommodations, it is no wonder that this hotel is a popular choice for both business and leisure travelers alike.Guests of the New York Marquis can choose from a variety of spacious and elegantly appointed guest rooms and suites. Each room features plush bedding, high-speed internet access, a flat-screen TV, a mini-fridge, and a marble bathroom with premium bath products. Select rooms offer stunning views of the city skyline or Times Square."
-      },
-      {
-        "propertyDescriptionsType": "DESCRIPTION",
-        "propertyDescriptionsText": "The New York Marquis is a luxurious hotel located in the heart of Times Square in New York City. It features modern accommodations, upscale amenities, and breathtaking views of the city skyline. The hotel is known for its prime location, which offers easy access to popular attractions, theaters, restaurants, and shopping destinations."
-      }
-    ]
-  },
-  {
-    "legalName": "House Inn Dallas Addison/Quorum Drive",
-    "propertyId": "12783",
-    "address1": "14975 Quorum Drive",
-    "state": "TX",
-    "country": "US",
-    "city": "Dallas",
-    "gmtOffset": "-05:00",
-    "propertyLocationLatitude": 32.951851,
-    "propertyLocationLongitude": -96.825424,
-    "propertyDescList": [
-      {
-        "propertyDescriptionsType": "LONGDESCRIPTION",
-        "propertyDescriptionsText": "The House Inn Dallas Addison/Quorum Drive is a modern and spacious hotel located in the vibrant city of Addison, Texas. The hotel features contemporary suites with full kitchens, separate living areas, and luxurious bedding, making it an ideal choice for extended stays and family vacations.Each suite at the House Inn Dallas Addison/Quorum Drive offers complimentary high-speed internet access, flat-screen TVs with premium cable channels, and a large work desk. Guests can prepare meals in their fully equipped kitchens, complete with a refrigerator, microwave, dishwasher, and stove."
-      },
-      {
-        "propertyDescriptionsType": "DESCRIPTION",
-        "propertyDescriptionsText": "The House Inn Dallas Addison/Quorum Drive is a modern hotel located in Addison, Texas. It features contemporary suites with full kitchens and separate living areas, along with amenities such as complimentary breakfast, an outdoor pool and hot tub, and a fitness center. The hotel also offers a free shuttle service to local attractions within a 3-mile radius."
-      }
-    ]
-  },
-  {
-    "legalName": "Hotel Bethesda Chevy Chase",
-    "propertyId": "12590",
-    "address1": "5520 Wisconsin Ave",
-    "state": "MD",
-    "country": "US",
-    "city": "Bethesda",
-    "gmtOffset": "-05:00",
-    "propertyLocationLatitude": 38.964502,
-    "propertyLocationLongitude": -77.087736,
-    "propertyDescList": [
-      {
-        "propertyDescriptionsType": "LONGDESCRIPTION",
-        "propertyDescriptionsText": "The HOtel Bethesda Chevy Chase is a stylish and modern hotel located in the heart of downtown Bethesda, Maryland. The hotel features spacious and comfortable guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Bethesda Chevy Chase is equipped with a flat-screen TV, a mini-refrigerator, and a coffee maker. Guests can enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer separate living areas and additional space for families or extended stays."
-      },
-      {
-        "propertyDescriptionsType": "DESCRIPTION",
-        "propertyDescriptionsText": "The Hotel Bethesda Chevy Chase is a modern hotel located in the heart of downtown Bethesda, Maryland. It offers comfortable guest rooms and suites equipped with flat-screen TVs, mini-refrigerators, and complimentary high-speed internet access. The hotel also features amenities such as a fitness center, business center, and meeting rooms."
-      }
-    ]
-  },
-  {
-    "legalName": "Hotel Orlando International Drive",
-    "propertyId": "18236",
-    "address1": "5750 Central Florida Parkway",
-    "state": "FL",
-    "country": "US",
-    "city": "Orlando",
-    "gmtOffset": "-05:00",
-    "propertyLocationLatitude": 28.407617,
-    "propertyLocationLongitude": -81.453603,
-    "propertyDescList": [
-      {
-        "propertyDescriptionsType": "LONGDESCRIPTION",
-        "propertyDescriptionsText": "The Hotel Orlando International Drive is a stylish and eco-friendly hotel located in the heart of Orlando's International Drive district. The hotel offers a variety of sustainable amenities and features, including a solar-powered water heating system and energy-efficient appliances in each guest room.Each guest room at the Hotel Orlando International Drive features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
-      },
-      {
-        "propertyDescriptionsType": "DESCRIPTION",
-        "propertyDescriptionsText": "The Hotel Orlando International Drive is a modern and eco-friendly hotel located in the heart of Orlando's International Drive district. It features fully equipped guest rooms and suites, along with amenities such as a 24-hour fitness center, an outdoor pool, and a complimentary breakfast buffet. The hotel's location offers easy access to popular attractions such as Universal Orlando."
-      }
-    ]
-  },
-  {
-    "legalName": "Hotel Suites Las Vegas Airport South",
-    "propertyId": "103451",
-    "address1": "355 East Warm Springs Road",
-    "state": "NV",
-    "country": "US",
-    "city": "Las Vegas",
-    "gmtOffset": "-05:00",
-    "propertyLocationLatitude": 36.056714,
-    "propertyLocationLongitude": -115.156331,
-    "propertyDescList": [
-      {
-        "propertyDescriptionsType": "LONGDESCRIPTION",
-        "propertyDescriptionsText": "The Hotel Suites Las Vegas Airport South is a comfortable and convenient hotel located just minutes from the Las Vegas Strip and McCarran International Airport. The hotel offers spacious and well-appointed guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Suites Las Vegas Airport South features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
-      },
-      {
-        "propertyDescriptionsType": "DESCRIPTION",
-        "propertyDescriptionsText": "The Hotel Suites Las Vegas Airport South is a convenient and comfortable hotel located just minutes from the Las Vegas Strip and McCarran International Airport. It offers spacious guest rooms and suites equipped with fully equipped kitchens, flat-screen TVs, and complimentary high-speed internet access. The hotel also features amenities such as a fitness center, business center, and 24-hour convenience store."
-      }
-    ]
-  }
+    {
+        "legalName": "New York Marquis Hotel",
+        "propertyId": "12546",
+        "address1": "2000 Broadway",
+        "state": "NY",
+        "country": "US",
+        "city": "New York",
+        "gmtOffset": "-05:00",
+        "propertyLocationLatitude": 40.758855,
+        "propertyLocationLongitude": -73.985869,
+        "propertyDescList": [
+            {
+                "propertyDescriptionsType": "LONGDESCRIPTION",
+                "propertyDescriptionsText": "The New York Marquis is a stunning and modern hotel situated in the heart of Times Square in New York City. This luxurious hotel features a contemporary design, upscale amenities, and breathtaking views of the city skyline. With its prime location and top-notch accommodations, it is no wonder that this hotel is a popular choice for both business and leisure travelers alike.Guests of the New York Marquis can choose from a variety of spacious and elegantly appointed guest rooms and suites. Each room features plush bedding, high-speed internet access, a flat-screen TV, a mini-fridge, and a marble bathroom with premium bath products. Select rooms offer stunning views of the city skyline or Times Square."
+            },
+            {
+                "propertyDescriptionsType": "DESCRIPTION",
+                "propertyDescriptionsText": "The New York Marquis is a luxurious hotel located in the heart of Times Square in New York City. It features modern accommodations, upscale amenities, and breathtaking views of the city skyline. The hotel is known for its prime location, which offers easy access to popular attractions, theaters, restaurants, and shopping destinations."
+            }
+        ]
+    },
+    {
+        "legalName": "House Inn Dallas Addison/Quorum Drive",
+        "propertyId": "12783",
+        "address1": "14975 Quorum Drive",
+        "state": "TX",
+        "country": "US",
+        "city": "Dallas",
+        "gmtOffset": "-05:00",
+        "propertyLocationLatitude": 32.951851,
+        "propertyLocationLongitude": -96.825424,
+        "propertyDescList": [
+            {
+                "propertyDescriptionsType": "LONGDESCRIPTION",
+                "propertyDescriptionsText": "The House Inn Dallas Addison/Quorum Drive is a modern and spacious hotel located in the vibrant city of Addison, Texas. The hotel features contemporary suites with full kitchens, separate living areas, and luxurious bedding, making it an ideal choice for extended stays and family vacations.Each suite at the House Inn Dallas Addison/Quorum Drive offers complimentary high-speed internet access, flat-screen TVs with premium cable channels, and a large work desk. Guests can prepare meals in their fully equipped kitchens, complete with a refrigerator, microwave, dishwasher, and stove."
+            },
+            {
+                "propertyDescriptionsType": "DESCRIPTION",
+                "propertyDescriptionsText": "The House Inn Dallas Addison/Quorum Drive is a modern hotel located in Addison, Texas. It features contemporary suites with full kitchens and separate living areas, along with amenities such as complimentary breakfast, an outdoor pool and hot tub, and a fitness center. The hotel also offers a free shuttle service to local attractions within a 3-mile radius."
+            }
+        ]
+    },
+    {
+        "legalName": "Hotel Bethesda Chevy Chase",
+        "propertyId": "12590",
+        "address1": "5520 Wisconsin Ave",
+        "state": "MD",
+        "country": "US",
+        "city": "Bethesda",
+        "gmtOffset": "-05:00",
+        "propertyLocationLatitude": 38.964502,
+        "propertyLocationLongitude": -77.087736,
+        "propertyDescList": [
+            {
+                "propertyDescriptionsType": "LONGDESCRIPTION",
+                "propertyDescriptionsText": "The HOtel Bethesda Chevy Chase is a stylish and modern hotel located in the heart of downtown Bethesda, Maryland. The hotel features spacious and comfortable guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Bethesda Chevy Chase is equipped with a flat-screen TV, a mini-refrigerator, and a coffee maker. Guests can enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer separate living areas and additional space for families or extended stays."
+            },
+            {
+                "propertyDescriptionsType": "DESCRIPTION",
+                "propertyDescriptionsText": "The Hotel Bethesda Chevy Chase is a modern hotel located in the heart of downtown Bethesda, Maryland. It offers comfortable guest rooms and suites equipped with flat-screen TVs, mini-refrigerators, and complimentary high-speed internet access. The hotel also features amenities such as a fitness center, business center, and meeting rooms."
+            }
+        ]
+    },
+    {
+        "legalName": "Hotel Orlando International Drive",
+        "propertyId": "18236",
+        "address1": "5750 Central Florida Parkway",
+        "state": "FL",
+        "country": "US",
+        "city": "Orlando",
+        "gmtOffset": "-05:00",
+        "propertyLocationLatitude": 28.407617,
+        "propertyLocationLongitude": -81.453603,
+        "propertyDescList": [
+            {
+                "propertyDescriptionsType": "LONGDESCRIPTION",
+                "propertyDescriptionsText": "The Hotel Orlando International Drive is a stylish and eco-friendly hotel located in the heart of Orlando's International Drive district. The hotel offers a variety of sustainable amenities and features, including a solar-powered water heating system and energy-efficient appliances in each guest room.Each guest room at the Hotel Orlando International Drive features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
+            },
+            {
+                "propertyDescriptionsType": "DESCRIPTION",
+                "propertyDescriptionsText": "The Hotel Orlando International Drive is a modern and eco-friendly hotel located in the heart of Orlando's International Drive district. It features fully equipped guest rooms and suites, along with amenities such as a 24-hour fitness center, an outdoor pool, and a complimentary breakfast buffet. The hotel's location offers easy access to popular attractions such as Universal Orlando."
+            }
+        ]
+    },
+    {
+        "legalName": "Hotel Suites Las Vegas Airport South",
+        "propertyId": "103451",
+        "address1": "355 East Warm Springs Road",
+        "state": "NV",
+        "country": "US",
+        "city": "Las Vegas",
+        "gmtOffset": "-05:00",
+        "propertyLocationLatitude": 36.056714,
+        "propertyLocationLongitude": -115.156331,
+        "propertyDescList": [
+            {
+                "propertyDescriptionsType": "LONGDESCRIPTION",
+                "propertyDescriptionsText": "The Hotel Suites Las Vegas Airport South is a comfortable and convenient hotel located just minutes from the Las Vegas Strip and McCarran International Airport. The hotel offers spacious and well-appointed guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Suites Las Vegas Airport South features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
+            },
+            {
+                "propertyDescriptionsType": "DESCRIPTION",
+                "propertyDescriptionsText": "The Hotel Suites Las Vegas Airport South is a convenient and comfortable hotel located just minutes from the Las Vegas Strip and McCarran International Airport. It offers spacious guest rooms and suites equipped with fully equipped kitchens, flat-screen TVs, and complimentary high-speed internet access. The hotel also features amenities such as a fitness center, business center, and 24-hour convenience store."
+            }
+        ]
+    }
 ]
