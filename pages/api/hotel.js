@@ -8,7 +8,20 @@ const HOTEL_DATA = JSON.parse(
 )
 
 export const getHotel = (propertyId) => {
-    return HOTEL_DATA.find((hotel) => hotel.propertyId === propertyId)
+    const hotel = HOTEL_DATA.find((hotel) => hotel.propertyId === propertyId)
+
+    if (hotel) {
+        return {
+            ...hotel,
+            address: [
+                hotel.address1,
+                hotel.city,
+                hotel.state,
+                hotel.country,
+            ].join(','),
+        }
+    }
+    return null
 }
 
 export default function handler(req, res) {

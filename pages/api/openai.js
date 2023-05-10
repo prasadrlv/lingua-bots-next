@@ -5,14 +5,9 @@ const configuration = new Configuration({
 })
 const openai = new OpenAIApi(configuration)
 
-export const nearByPointOfInterests = async (address) => {
+const getOpenAiChatCompletion = async (userContent) => {
     try {
-        const messages = [
-            {
-                role: 'user',
-                content: `Get point of interest near "${address}"`,
-            },
-        ]
+        const messages = [{ role: 'user', content: userContent }]
 
         const response = await openai.createChatCompletion({
             messages,
@@ -21,7 +16,12 @@ export const nearByPointOfInterests = async (address) => {
 
         return response.data.choices[0].message.content
     } catch (error) {
-        console.log(error.message)
+        console.error(`Unable to get chatgpt choice for ${userContent}`, error)
     }
     return null
 }
+
+export const nearByPointOfInterests = (address) =>
+    getOpenAiChatCompletion(
+        `Get point of interest near "${address}" , each suggestion in a new line`
+    )
