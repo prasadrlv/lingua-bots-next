@@ -18,7 +18,8 @@ export const getHotel = (propertyId) => {
                 hotel.city,
                 hotel.state,
                 hotel.country,
-            ].join(','),
+            ].join(', '),
+            cityAddress: [hotel.city, hotel.state, hotel.country].join(', '),
         }
     }
     return null
