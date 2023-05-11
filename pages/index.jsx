@@ -9,23 +9,28 @@ import {
 } from '@mui/material'
 
 const Home = () => {
-    const propertyId = 'ABC123NY'
-    const locale = 'en-US'
-    const userType = 'business'
+
+    const [propertyId, setPropertyId] = React.useState('ABC123NY');
+    const [locale, setLocale] = React.useState('en-US');
+    const [userType, setUserType] = React.useState('business');
+
+    const handlePropertyIdChange = (event) => setPropertyId(event.target.value);
+    const handleLocaleChange = (event) => setLocale(event.target.value);
+    const handleUserTypeChange = (event) => setUserType(event.target.value);
 
     return (
         <Box sx={{ width: 300, paddingLeft: 5, paddingTop: 5 }}>
             <form action="./search/hotelView">
                 <FormControl sx={{ mt: 3 }}>
-                    <InputLabel id="propertyId-label">Property Id</InputLabel>
+                    <InputLabel>Property Id</InputLabel>
                     <Select
                         name="propertyId"
                         id="propertyId"
                         value={propertyId}
-                        label="Property Id"
+                        onChange={handlePropertyIdChange}
                     >
                         <MenuItem value="ABC123NY">
-                            New York Marquis Hotel
+                            New York City Hotel
                         </MenuItem>
                         <MenuItem value="ABC124TX">
                             House Inn Dallas Addison/Quorum Drive
@@ -48,7 +53,7 @@ const Home = () => {
                         name="locale"
                         id="locale"
                         value={locale}
-                        label="Locale"
+                        onChange={handleLocaleChange}
                     >
                         <MenuItem value="en-US">English</MenuItem>
                         <MenuItem value="de-DE">German</MenuItem>
@@ -62,7 +67,7 @@ const Home = () => {
                         name="userType"
                         id="userType"
                         value={userType}
-                        label="User Type"
+                        onChange={handleUserTypeChange}
                     >
                         <MenuItem value="business">Business</MenuItem>
                         <MenuItem value="family">Family</MenuItem>

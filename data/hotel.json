@@ -1,6 +1,6 @@
 [
     {
-        "legalName": "New York Marquis Hotel",
+        "legalName": "New York City Hotel",
         "propertyId": "ABC123NY",
         "address1": "2000 Broadway",
         "state": "NY",
@@ -12,11 +12,11 @@
         "descriptions": [
             {
                 "type": "LONG_DESCRIPTION",
-                "text": "The New York Marquis is a stunning and modern hotel situated in the heart of Times Square in New York City. This luxurious hotel features a contemporary design, upscale amenities, and breathtaking views of the city skyline. With its prime location and top-notch accommodations, it is no wonder that this hotel is a popular choice for both business and leisure travelers alike.Guests of the New York Marquis can choose from a variety of spacious and elegantly appointed guest rooms and suites. Each room features plush bedding, high-speed internet access, a flat-screen TV, a mini-fridge, and a marble bathroom with premium bath products. Select rooms offer stunning views of the city skyline or Times Square."
+                "text": "The New York City hotel is a stunning and modern hotel situated in the heart of Times Square in New York City. This luxurious hotel features a contemporary design, upscale amenities, and breathtaking views of the city skyline. With its prime location and top-notch accommodations, it is no wonder that this hotel is a popular choice for both business and leisure travelers alike.Guests of the New York City can choose from a variety of spacious and elegantly appointed guest rooms and suites. Each room features plush bedding, high-speed internet access, a flat-screen TV, a mini-fridge, and a marble bathroom with premium bath products. Select rooms offer stunning views of the city skyline or Times Square."
             },
             {
                 "type": "DESCRIPTION",
-                "text": "The New York Marquis is a luxurious hotel located in the heart of Times Square in New York City. It features modern accommodations, upscale amenities, and breathtaking views of the city skyline. The hotel is known for its prime location, which offers easy access to popular attractions, theaters, restaurants, and shopping destinations."
+                "text": "The New York City is a luxurious hotel located in the heart of Times Square in New York City. It features modern accommodations, upscale amenities, and breathtaking views of the city skyline. The hotel is known for its prime location, which offers easy access to popular attractions, theaters, restaurants, and shopping destinations."
             }
         ]
     },
