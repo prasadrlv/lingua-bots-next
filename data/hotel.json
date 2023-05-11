@@ -11,7 +11,7 @@
         "longitude": -73.985869,
         "descriptions": [
             {
-                "type": "LONGDESCRIPTION",
+                "type": "LONG_DESCRIPTION",
                 "text": "The New York Marquis is a stunning and modern hotel situated in the heart of Times Square in New York City. This luxurious hotel features a contemporary design, upscale amenities, and breathtaking views of the city skyline. With its prime location and top-notch accommodations, it is no wonder that this hotel is a popular choice for both business and leisure travelers alike.Guests of the New York Marquis can choose from a variety of spacious and elegantly appointed guest rooms and suites. Each room features plush bedding, high-speed internet access, a flat-screen TV, a mini-fridge, and a marble bathroom with premium bath products. Select rooms offer stunning views of the city skyline or Times Square."
             },
             {
@@ -32,7 +32,7 @@
         "longitude": -96.825424,
         "descriptions": [
             {
-                "type": "LONGDESCRIPTION",
+                "type": "LONG_DESCRIPTION",
                 "text": "The House Inn Dallas Addison/Quorum Drive is a modern and spacious hotel located in the vibrant city of Addison, Texas. The hotel features contemporary suites with full kitchens, separate living areas, and luxurious bedding, making it an ideal choice for extended stays and family vacations.Each suite at the House Inn Dallas Addison/Quorum Drive offers complimentary high-speed internet access, flat-screen TVs with premium cable channels, and a large work desk. Guests can prepare meals in their fully equipped kitchens, complete with a refrigerator, microwave, dishwasher, and stove."
             },
             {
@@ -53,7 +53,7 @@
         "longitude": -77.087736,
         "descriptions": [
             {
-                "type": "LONGDESCRIPTION",
+                "type": "LONG_DESCRIPTION",
                 "text": "The HOtel Bethesda Chevy Chase is a stylish and modern hotel located in the heart of downtown Bethesda, Maryland. The hotel features spacious and comfortable guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Bethesda Chevy Chase is equipped with a flat-screen TV, a mini-refrigerator, and a coffee maker. Guests can enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer separate living areas and additional space for families or extended stays."
             },
             {
@@ -74,7 +74,7 @@
         "longitude": -81.453603,
         "descriptions": [
             {
-                "type": "LONGDESCRIPTION",
+                "type": "LONG_DESCRIPTION",
                 "text": "The Hotel Orlando International Drive is a stylish and eco-friendly hotel located in the heart of Orlando's International Drive district. The hotel offers a variety of sustainable amenities and features, including a solar-powered water heating system and energy-efficient appliances in each guest room.Each guest room at the Hotel Orlando International Drive features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
             },
             {
@@ -95,7 +95,7 @@
         "longitude": -115.156331,
         "descriptions": [
             {
-                "type": "LONGDESCRIPTION",
+                "type": "LONG_DESCRIPTION",
                 "text": "The Hotel Suites Las Vegas Airport South is a comfortable and convenient hotel located just minutes from the Las Vegas Strip and McCarran International Airport. The hotel offers spacious and well-appointed guest rooms and suites, along with a range of amenities designed to make guests' stays as comfortable and convenient as possible.Each guest room at the Hotel Suites Las Vegas Airport South features a fully equipped kitchen, a flat-screen TV, and a comfortable workspace. Guests can also enjoy complimentary high-speed internet access and luxurious bedding for a comfortable night's sleep. The hotel's suites offer additional space and a separate living area, perfect for families or extended stays."
             },
             {

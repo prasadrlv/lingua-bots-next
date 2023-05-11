@@ -21,7 +21,15 @@ const getOpenAiChatCompletion = async (userContent) => {
     return null
 }
 
-export const nearByPointOfInterests = (address) =>
+export const getMarketingMessage = (message, type) =>
     getOpenAiChatCompletion(
-        `Get point of interest near "${address}" , each suggestion in a new line`
+        `'''${message}''', Get the inspirational short description for the text in triple quotes for a ${type} traveler`
+    )
+
+export const getNearByPointOfInterests = (address) =>
+    getOpenAiChatCompletion(`Get the pois and distance near "${address}"`)
+
+export const translateText = (text, locale) =>
+    getOpenAiChatCompletion(
+        `'''${text}''', translate the text in triple quotes in ${locale} locale`
     )
