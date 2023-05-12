@@ -45,7 +45,7 @@ const Home = () => {
                     <InputLabel
                         sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
                     >
-                    Your Stay
+                    Your Stay!
                     </InputLabel>
                     <Select
                         name="propertyId"
@@ -94,7 +94,7 @@ const Home = () => {
                     <InputLabel
                         sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
                     >
-                        Guest Type
+                        Stay Experience
                     </InputLabel>
                     <Select
                         name="userType"

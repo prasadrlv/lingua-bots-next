@@ -31,8 +31,8 @@ export const getServerSideProps = async (context) => {
     hotel.chatGpt = {}
 
     const promises = [
-        getNearByPointOfInterests(hotel.cityAddress, userType),
-        getMarketingMessage(hotel.longDesc, userType || 'business', locale),
+        getNearByPointOfInterests(hotel.cityAddress, userType, locale),
+        getMarketingMessage(hotel.longDesc, userType, locale),
     ]
 
     if (locale && locale !== 'en-US') {
