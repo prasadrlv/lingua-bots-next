@@ -6,22 +6,42 @@ import {
     InputLabel,
     Button,
     Box,
+    Backdrop,
+    CircularProgress,
 } from '@mui/material'
 
 const Home = () => {
+    const [propertyId, setPropertyId] = React.useState('ABC123NY')
+    const [locale, setLocale] = React.useState('en-US')
+    const [userType, setUserType] = React.useState('business')
 
-    const [propertyId, setPropertyId] = React.useState('ABC123NY');
-    const [locale, setLocale] = React.useState('en-US');
-    const [userType, setUserType] = React.useState('business');
+    const [progress, setProgress] = React.useState(false)
+    const stopSpinner = () => {
+        setProgress(false)
+    }
+    const showSpinner = () => {
+        setProgress(!progress)
+    }
 
-    const handlePropertyIdChange = (event) => setPropertyId(event.target.value);
-    const handleLocaleChange = (event) => setLocale(event.target.value);
-    const handleUserTypeChange = (event) => setUserType(event.target.value);
+    const handlePropertyIdChange = (event) => setPropertyId(event.target.value)
+    const handleLocaleChange = (event) => setLocale(event.target.value)
+    const handleUserTypeChange = (event) => setUserType(event.target.value)
 
     return (
         <Box sx={{ paddingLeft: 5, paddingTop: 5 }}>
+            <Backdrop
+                sx={{
+                    color: '#fff',
+                    zIndex: (theme) => theme.zIndex.drawer + 1,
+                }}
+                open={progress}
+                onClick={stopSpinner}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+
             <form action="./search/hotelView">
-                <FormControl sx={{ mt: 3, ml:2 }}>
+                <FormControl sx={{ mt: 3, ml: 2 }}>
                     <InputLabel>Property Id</InputLabel>
                     <Select
                         name="propertyId"
@@ -47,7 +67,7 @@ const Home = () => {
                     </Select>
                 </FormControl>
 
-                <FormControl sx={{ mt: 3, ml:2  }}>
+                <FormControl sx={{ mt: 3, ml: 2 }}>
                     <InputLabel>Locale </InputLabel>
                     <Select
                         name="locale"
@@ -61,7 +81,7 @@ const Home = () => {
                     </Select>
                 </FormControl>
 
-                <FormControl sx={{ mt: 3, ml:2  }}>
+                <FormControl sx={{ mt: 3, ml: 2 }}>
                     <InputLabel>User Type</InputLabel>
                     <Select
                         name="userType"
@@ -76,10 +96,11 @@ const Home = () => {
                 </FormControl>
 
                 <Button
-                    sx={{ mt: 5, ml:2,  }}
+                    sx={{ mt: 5, ml: 2 }}
                     type="submit"
                     variant="contained"
                     color="primary"
+                    onClick={showSpinner}
                 >
                     Get Property Details
                 </Button>
