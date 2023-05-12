@@ -30,19 +30,28 @@ export const getServerSideProps = async (context) => {
     ).text
 
     hotel.chatGpt = {}
-    hotel.chatGpt.pois = await getNearByPointOfInterests(hotel.cityAddress,userType)
-    hotel.chatGpt.marketingMessage = await getMarketingMessage(
+
+    const promises =[ getNearByPointOfInterests(hotel.cityAddress,userType), getMarketingMessage(
         hotel.longDesc,
         userType || 'business',
         locale
-    )
+    )]
+    
+    if (locale && locale !== 'en-US') {
+        promises.push(translateText(hotel.longDesc, locale))
+    }
+
+    const response = await Promise.all(promises);
+
+    hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item))
+    hotel.chatGpt.marketingMessage = response[1];
 
     if (locale && locale !== 'en-US') {
-        hotel.longDesc = await translateText(hotel.longDesc, locale)
+        hotel.longDesc = response[2]; 
     }
 
     return {
-        props: { hotel, locale },
+        props: { hotel },
     }
 }
 
@@ -50,21 +59,21 @@ const HotelView = (props) => {
     const { hotel } = props
 
     return (
-        <Stack justifyContent="center" alignItems="center">
+        <Stack>
             <div>
-                <Typography variant="h2" component="h2">
+                <Typography sx={{ mt: 3, ml:1 }} variant="h4">
                     {hotel.legalName}
                 </Typography>
             </div>
             <div>
-                <Typography sx={{ fontSize: 13 }} >{hotel.address}</Typography>
+                <Typography sx={{ ml:1, fontSize: 13 }} >{hotel.address}</Typography>
             </div>
 
             <div>
             <Card sx={{ mt: 5 }}>
                     <CardHeader title="Marketing short description" />
                     <CardContent>
-                    <Typography variant="h6">
+                    <Typography >
                         {hotel.chatGpt.marketingMessage}
                     </Typography>
                     </CardContent>
@@ -84,7 +93,11 @@ const HotelView = (props) => {
                 <Card sx={{ mt: 5 }}>
                     <CardHeader title="Point of Interests" />
                     <CardContent>
-                        <Typography>{hotel.chatGpt.pois}</Typography>
+                        <ul>
+                         {hotel.chatGpt.pois.map((item,key) => 
+                           <li key={key}> <Typography >{item}</Typography></li>
+                            )}
+                        </ul>
                     </CardContent>
                 </Card>
             </div>
