@@ -31,7 +31,7 @@ console.log('Property Id ', { propertyId, locale, userType });
 
     hotel.chatGpt = {}
 
-    const promises =[ getNearByPointOfInterests(hotel.cityAddress,userType), getMarketingMessage(
+    const promises =[ false && getNearByPointOfInterests(hotel.cityAddress,userType), getMarketingMessage(
         hotel.longDesc,
         userType || 'business',
         locale
@@ -43,7 +43,7 @@ console.log('Property Id ', { propertyId, locale, userType });
 console.log("Before calling promise all")
     const response = await Promise.all(promises);
     console.log("After calling promise all")
-    hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
+    hotel.chatGpt.pois = false && (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
     hotel.chatGpt.marketingMessage = response[1];
 
     if (false && locale && locale !== 'en-US') {
