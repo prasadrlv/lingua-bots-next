@@ -21,7 +21,7 @@ export const getServerSideProps = async (context) => {
             notFound: true,
         }
     }
-
+console.log('Property Id ', { propertyId, locale, userType });
     hotel.shortDesc = hotel.descriptions.find(
         (desc) => desc.type === 'DESCRIPTION'
     ).text
@@ -40,9 +40,9 @@ export const getServerSideProps = async (context) => {
     if (locale && locale !== 'en-US') {
         promises.push(translateText(hotel.longDesc, locale))
     }
-
+console.log("Before calling promise all")
     const response = await Promise.all(promises);
-
+    console.log("After calling promise all")
     hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
     hotel.chatGpt.marketingMessage = response[1];
 
