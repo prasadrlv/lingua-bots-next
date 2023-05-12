@@ -43,7 +43,7 @@ export const getServerSideProps = async (context) => {
 
     const response = await Promise.all(promises);
 
-    hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item))
+    hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
     hotel.chatGpt.marketingMessage = response[1];
 
     if (locale && locale !== 'en-US') {
@@ -71,7 +71,7 @@ const HotelView = (props) => {
 
             <div>
             <Card sx={{ mt: 5 }}>
-                    <CardHeader title="Marketing short description" />
+                    <CardHeader title="Inspirational Description" />
                     <CardContent>
                     <Typography >
                         {hotel.chatGpt.marketingMessage}
