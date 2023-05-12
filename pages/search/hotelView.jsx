@@ -37,7 +37,7 @@ console.log('Property Id ', { propertyId, locale, userType });
         locale
     )]
     
-    if (locale && locale !== 'en-US') {
+    if (false && locale && locale !== 'en-US') {
         promises.push(translateText(hotel.longDesc, locale))
     }
 console.log("Before calling promise all")
@@ -46,7 +46,7 @@ console.log("Before calling promise all")
     hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
     hotel.chatGpt.marketingMessage = response[1];
 
-    if (locale && locale !== 'en-US') {
+    if (false && locale && locale !== 'en-US') {
         hotel.longDesc = response[2]; 
     }
 
