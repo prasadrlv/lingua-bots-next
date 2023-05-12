@@ -19,9 +19,9 @@ const Home = () => {
     const handleUserTypeChange = (event) => setUserType(event.target.value);
 
     return (
-        <Box sx={{ width: 300, paddingLeft: 5, paddingTop: 5 }}>
+        <Box sx={{ paddingLeft: 5, paddingTop: 5 }}>
             <form action="./search/hotelView">
-                <FormControl sx={{ mt: 3 }}>
+                <FormControl sx={{ mt: 3, ml:2 }}>
                     <InputLabel>Property Id</InputLabel>
                     <Select
                         name="propertyId"
@@ -47,7 +47,7 @@ const Home = () => {
                     </Select>
                 </FormControl>
 
-                <FormControl sx={{ mt: 3, width: 300 }}>
+                <FormControl sx={{ mt: 3, ml:2  }}>
                     <InputLabel>Locale </InputLabel>
                     <Select
                         name="locale"
@@ -61,7 +61,7 @@ const Home = () => {
                     </Select>
                 </FormControl>
 
-                <FormControl sx={{ mt: 3, width: 300 }}>
+                <FormControl sx={{ mt: 3, ml:2  }}>
                     <InputLabel>User Type</InputLabel>
                     <Select
                         name="userType"
@@ -76,7 +76,7 @@ const Home = () => {
                 </FormControl>
 
                 <Button
-                    sx={{ mt: 3 }}
+                    sx={{ mt: 5, ml:2,  }}
                     type="submit"
                     variant="contained"
                     color="primary"
