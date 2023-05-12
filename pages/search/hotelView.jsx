@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent'
 import Stack from '@mui/material/Stack'
 import CardHeader from '@mui/material/CardHeader'
 
-
 import { getHotel } from '../api/hotel'
 import {
     getNearByPointOfInterests,
@@ -31,22 +30,30 @@ export const getServerSideProps = async (context) => {
 
     hotel.chatGpt = {}
 
-    const promises =[ getNearByPointOfInterests(hotel.cityAddress,userType), getMarketingMessage(
-        hotel.longDesc,
-        userType || 'business',
-        locale
-    )]
-    
+    const promises = [
+        getNearByPointOfInterests(hotel.cityAddress, userType),
+        getMarketingMessage(hotel.longDesc, userType || 'business', locale),
+    ]
+
     if (locale && locale !== 'en-US') {
         promises.push(translateText(hotel.longDesc, locale))
     }
-
-    const response = await Promise.all(promises);
-    hotel.chatGpt.pois = (response[0]||'').split(/\d+\. /).filter(item=>Boolean(item && item.trim() && !item.startsWith("As an AI language model")))
-    hotel.chatGpt.marketingMessage = response[1];
+    console.time('AllChatGptCalls')
+    const response = await Promise.all(promises)
+    console.timeEnd('AllChatGptCalls')
+    hotel.chatGpt.pois = (response[0] || '')
+        .split(/\d+\. /)
+        .filter((item) =>
+            Boolean(
+                item &&
+                    item.trim() &&
+                    !item.startsWith('As an AI language model')
+            )
+        )
+    hotel.chatGpt.marketingMessage = response[1]
 
     if (locale && locale !== 'en-US') {
-        hotel.longDesc = response[2]; 
+        hotel.longDesc = response[2]
     }
 
     return {
@@ -60,27 +67,38 @@ const HotelView = (props) => {
     return (
         <Stack>
             <div>
-                <Typography sx={{ mt: 3, ml:1 }} variant="h4">
+                <Typography
+                    sx={{ mt: 3, ml: 1, textAlign: 'center' }}
+                    variant="h4"
+                >
                     {hotel.legalName}
                 </Typography>
             </div>
             <div>
-                <Typography sx={{ ml:1, fontSize: 13 }} >{hotel.address}</Typography>
+                <Typography sx={{ ml: 1, fontSize: 13, textAlign: 'center' }}>
+                    {hotel.address}
+                </Typography>
             </div>
 
             <div>
-            <Card sx={{ mt: 5 }}>
-                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Heartening Narrative" />
+                <Card sx={{ mt: 5 }}>
+                    <CardHeader
+                        sx={{ ml: 1, fontSize: 18, color: 'blue' }}
+                        title="Customized Narrative"
+                    />
                     <CardContent>
-                    <Typography >
-                        {hotel.chatGpt.marketingMessage}
-                    </Typography>
+                        <Typography>
+                            {hotel.chatGpt.marketingMessage}
+                        </Typography>
                     </CardContent>
                 </Card>
             </div>
             <div>
                 <Card sx={{ mt: 5 }}>
-                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Briefing about hotel"/>
+                    <CardHeader
+                        sx={{ ml: 1, fontSize: 18, color: 'blue' }}
+                        title="Briefing about hotel"
+                    />
                     <CardContent>
                         <Typography>{hotel.longDesc}</Typography>
                     </CardContent>
@@ -88,12 +106,18 @@ const HotelView = (props) => {
             </div>
             <div>
                 <Card sx={{ mt: 5 }}>
-                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Explore your interests! with a greater joy"/>
+                    <CardHeader
+                        sx={{ ml: 1, fontSize: 18, color: 'blue' }}
+                        title="Explore your interests! with a greater joy"
+                    />
                     <CardContent>
                         <ul>
-                         {(hotel.chatGpt.pois||[]).map((item,key) => 
-                           <li key={key}> <Typography >{item}</Typography></li>
-                            )}
+                            {(hotel.chatGpt.pois || []).map((item, key) => (
+                                <li key={key}>
+                                    {' '}
+                                    <Typography>{item}</Typography>
+                                </li>
+                            ))}
                         </ul>
                     </CardContent>
                 </Card>

@@ -28,7 +28,7 @@ const Home = () => {
     const handleUserTypeChange = (event) => setUserType(event.target.value)
 
     return (
-        <Box sx={{ paddingLeft: 5, paddingTop: 5 }}>
+        <Box sx={{ paddingLeft: 5, paddingTop: 5, textAlign: 'center' }}>
             <Backdrop
                 sx={{
                     color: '#fff',
@@ -42,7 +42,11 @@ const Home = () => {
 
             <form action="./search/hotelView">
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Your Stay Name!</InputLabel>
+                    <InputLabel
+                        sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
+                    >
+                        Your Stay Name!
+                    </InputLabel>
                     <Select
                         name="propertyId"
                         id="propertyId"
@@ -68,7 +72,11 @@ const Home = () => {
                 </FormControl>
 
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Language</InputLabel>
+                    <InputLabel
+                        sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
+                    >
+                        Language
+                    </InputLabel>
                     <Select
                         name="locale"
                         id="locale"
@@ -82,7 +90,11 @@ const Home = () => {
                 </FormControl>
 
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Guest Type</InputLabel>
+                    <InputLabel
+                        sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
+                    >
+                        Guest Type
+                    </InputLabel>
                     <Select
                         name="userType"
                         id="userType"
