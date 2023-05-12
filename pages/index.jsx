@@ -28,7 +28,7 @@ const Home = () => {
     const handleUserTypeChange = (event) => setUserType(event.target.value)
 
     return (
-        <Box sx={{ paddingLeft: 5, paddingTop: 5, textAlign: 'center' }}>
+        <Box sx={{ paddingTop: 5, textAlign: 'center' }}>
             <Backdrop
                 sx={{
                     color: '#fff',
@@ -45,12 +45,13 @@ const Home = () => {
                     <InputLabel
                         sx={{ ml: 1, mt: -2, fontSize: 20, color: 'purple' }}
                     >
-                        Your Stay Name!
+                    Your Stay
                     </InputLabel>
                     <Select
                         name="propertyId"
                         id="propertyId"
                         value={propertyId}
+                        autoWidth
                         onChange={handlePropertyIdChange}
                     >
                         <MenuItem value="ABC123NY">
