@@ -70,7 +70,7 @@ const HotelView = (props) => {
 
             <div>
             <Card sx={{ mt: 5 }}>
-                    <CardHeader title="Inspirational Description" />
+                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Heartening Narrative" />
                     <CardContent>
                     <Typography >
                         {hotel.chatGpt.marketingMessage}
@@ -80,7 +80,7 @@ const HotelView = (props) => {
             </div>
             <div>
                 <Card sx={{ mt: 5 }}>
-                    <CardHeader title="Overview" />
+                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Briefing about hotel"/>
                     <CardContent>
                         <Typography>{hotel.longDesc}</Typography>
                     </CardContent>
@@ -88,7 +88,7 @@ const HotelView = (props) => {
             </div>
             <div>
                 <Card sx={{ mt: 5 }}>
-                    <CardHeader title="Point of Interests" />
+                    <CardHeader sx={{ ml:1, fontSize: 18 , color: 'blue' }} title="Explore your interests! with a greater joy"/>
                     <CardContent>
                         <ul>
                          {(hotel.chatGpt.pois||[]).map((item,key) => 

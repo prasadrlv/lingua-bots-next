@@ -42,7 +42,7 @@ const Home = () => {
 
             <form action="./search/hotelView">
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel >Your Stay Name!</InputLabel>
+                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Your Stay Name!</InputLabel>
                     <Select
                         name="propertyId"
                         id="propertyId"
@@ -68,7 +68,7 @@ const Home = () => {
                 </FormControl>
 
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel>Locale </InputLabel>
+                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Language</InputLabel>
                     <Select
                         name="locale"
                         id="locale"
@@ -82,7 +82,7 @@ const Home = () => {
                 </FormControl>
 
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel>User Type</InputLabel>
+                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Guest Type</InputLabel>
                     <Select
                         name="userType"
                         id="userType"
