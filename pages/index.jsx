@@ -42,7 +42,7 @@ const Home = () => {
 
             <form action="./search/hotelView">
                 <FormControl sx={{ mt: 3, ml: 2 }}>
-                    <InputLabel sx={{ ml:1, fontSize:20 , color: 'purple' }}>Your Stay Name!</InputLabel>
+                    <InputLabel>Your Stay Name!</InputLabel>
                     <Select
                         name="propertyId"
                         id="propertyId"
