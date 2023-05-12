@@ -94,7 +94,7 @@ const HotelView = (props) => {
                     <CardHeader title="Point of Interests" />
                     <CardContent>
                         <ul>
-                         {hotel.chatGpt.pois.map((item,key) => 
+                         {(hotel.chatGpt.pois||[]).map((item,key) => 
                            <li key={key}> <Typography >{item}</Typography></li>
                             )}
                         </ul>
